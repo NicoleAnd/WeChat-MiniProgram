@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class='section'>
+  <block wx:for='{{news}}'>
+    <view class='news-item'bindtap='showdetail' data-id='{{item.id}}'>
+      <image class='cover' src='{{item.cover}}'></image>
+      <view class='news-words'>
+        <view class='title'>{{item.title}}</view>
+        <view class='other-info'>
+          <view class='other-info-item category'>{{item.category}}</view>
+          <view class='other-info-item comment-box'>
+            <text>{{item.comments.length}}</text>
+            <text>评论</text>
+          </view>
+          <view class='other-info-item time'>{{item.time}}</view>
+          <image class='other-info-item hot' wx:if='{{item.hot}}' src='/imgs/icon_hot.png'></image>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

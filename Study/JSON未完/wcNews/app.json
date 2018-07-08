@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/comment/comment",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f40",
+    "navigationBarTitleText": "推荐",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "selectedColor": "#55B1E4",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/home1.png"
+      },
+      {
+        "pagePath": "pages/detial/detial",
+        "text": "加入",
+        "iconPath": "pages/images/add.png",
+        "selectedIconPath": "pages/images/add1.png"
+      }
+    ]
+}
